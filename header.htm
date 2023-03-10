@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 400;
+        }
+        
+        table {
+            border-color: black;
+            border-collapse: collapse;
+        }
+        
+        .navbar {
+            overflow: hidden;
+            background-color: rgb(235, 15, 15);
+        }
+        /* Links inside navigation bar (.navbar a) */
+        
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            /* Padding is space between its content and its border */
+            text-decoration: none;
+        }
+        
+        .dropdown {
+            float: left;
+            overflow: hidden;
+            /* Overflow property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area */
+        }
+        
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: rgb(88, 37, 37);
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(118, 32, 32, 0.2);
+            /* z-index property specifies the stack order of an element. */
+            z-index: 1;
+            /* An element with greater stack order is always in front of an element with a lower stack order. */
+        }
+        
+        .dropdown-content a {
+            float: none;
+            /* it will print different drop down content link in different line */
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body style="background-color:rgb(248, 248, 237);">
+    <img src="https://www.dsc.du.ac.in/wp-content/uploads/2022/01/logo-black.png" alt="Image not found" height="100" width="250" align="left">
+    <img src="https://www.dsc.du.ac.in/wp-content/uploads/2022/11/dyalsinghlogo-2.png" alt="Image not found" height="50" width="850" style="align-content: flex-end;">
+    <img src="https://www.dsc.du.ac.in/wp-content/uploads/2022/02/dulogo-1.png" alt="Image not Found" height="120" width="240" align="right">
+    <br><br><br>
+    <a name="Top of the page"></a><br><br>
+
+    <div class="navbar">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="about.htm" target="right">Home</a>
+        <a href="about.htm" target="right">About Us</a>
+        <div class="dropdown">
+            <button class="dropbtn">Administration</button>
+            <div class="dropdown-content">
+                <a href="https://www.dsc.du.ac.in/principals-desk">Principal's Desk</a>
+                <a href="#">Governing Body</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Academics</button>
+            <div class="dropdown-content">
+                <a href="#">Department</a>
+                <a href="#">Syllabus</a>
+                <a href="#">Teaching Plan</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Admission</button>
+            <div class="dropdown-content">
+                <a href="#">DU Bulletin of Information</a>
+                <a href="#">CSAS</a>
+                <a href="#">Courses Offered</a>
+                <a href="#">Seat Matrix</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Student Corner</button>
+            <div class="dropdown-content">
+                <a href="#">Student Notice</a>
+                <a href="#">Internal Assessment</a>
+                <a href="#">Syllabus</a>
+                <a href="#">Fee Payment</a>
+                <a href="#">Placement Cell</a>
+                <a href="#">Library</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Examination</button>
+            <div class="dropdown-content">
+                <a href="#">OBE 2022</a>
+                <a href="#">Notices</a>
+                <a href="#">Examination & Results</a>
+            </div>
+        </div>
+        <a href="#">IQAC</a>
+        <a href="#">NAAC</a>
+        <a href="#">NIRF</a>
+    </div>
+
+    <marquee direction="left" height="25" style="background-color: burlywood; font-size:larger">Semester 1 Frontend Web Development and Design project to be submitted by Jan 20,2023</marquee><br><br>
+</body>
+
+</html>

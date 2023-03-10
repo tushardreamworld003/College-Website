@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-color: aqua;
+        }
+        
+        #P1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font: weight 500px;
+        }
+        
+        h1 {
+            text-align: justify;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Student's Registration Form</h2>
+    <form method="post" action="mailto:dreamworld06003@gmail.com" enctype="text/plain">
+        <p id="P1">
+            <label>First Name</label>
+            <input type="text" name="First Name: " id="box_border" size="20" required><br><br>
+
+            <label>Last Name</label>
+            <input type="text" name="Last Name: " id="box_border" size="20" required><br><br>
+
+            <label>Date of Birth</label>
+            <input type="date" name="days" required><br>
+
+            <label>Course</label><br>
+            <select>
+                <option>B.Sc.(Hons.) Computer Science</option>
+                <option>B.A.(Hons.) Economics</option>
+                <option>B.Com.(Hons.)</option>
+                <option>B.A.(Hons.) Sanskrit</option>
+            </select><br><br>
+
+            <label>Section</label><br>
+            <input type="radio" name="Section" value="A">A <br>
+            <input type="radio" name="Section" value="B">B <br>
+            <input type="radio" name="Section" value="C">C <br><br>
+
+            <label>Roll No.</label>
+            <input type="digit" name="Roll No: " id="box_border" pattern="[0-9]{2}[/]{1}[0-9]{5}" placeholder="xx/xxxxx"><br><br>
+
+            <label>Mobile No.</label>
+            <input type="tel" name="Mobile No: " id="mob_no" pattern="[6789][0-9]{9}" placeholder="xxxxxxxxxx" required /><br><br>
+
+            <label>Email</label>
+            <input type="email" name="mail" placeholder="Enter a gmail address" pattern=".+@gmail.com"><br><br>
+
+            <label>Gender</label><br>
+            <select>
+                <option>MALE</option>
+                <option>FEMALE</option>
+                <option>TRANSGENDER</option>
+            </select><br><br>
+
+            <label>Optional Subjects</label><br>
+            <input type="checkbox">Frontend <br>
+            <input type="checkbox">Backend <br>
+            <input type="checkbox">Flutter <br>
+            <input type="checkbox">Digital Marketing <br>
+            <input type="checkbox">Digital Empowerment <br>
+            <input type="checkbox">Vedic Mathematics <br>
+            <input type="checkbox">Sports for Life <br><br>
+            <input type="submit" value="SEND"><br>
+
+            <input type="reset" value="CLEAR">
+        </p>
+    </form>
+</body>
+
+</html>
